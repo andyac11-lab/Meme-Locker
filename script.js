@@ -1,34 +1,7 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background: #fff;
-  color: #111;
-}
-.meme-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px;
-}
-.meme {
-  position: relative;
-  width: 300px;
-  height: auto;
-}
-.meme img.blurred {
-  width: 100%;
-  filter: blur(8px);
-  transition: filter 0.3s;
-}
-.unlock-overlay {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px;
-  font-size: 16px;
-}
+document.querySelectorAll('.meme').forEach((memeBox) => {
+  memeBox.addEventListener('click', () => {
+    alert('Ad will play here... (Insert Adsterra)');
+    memeBox.querySelector('img').classList.remove('blurred');
+    memeBox.querySelector('.unlock-overlay').style.display = 'none';
+  });
+});
