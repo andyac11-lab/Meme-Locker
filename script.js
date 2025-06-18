@@ -8,3 +8,13 @@ function showAdAndUnlock(memeElement) {
         memeElement.querySelector('.overlay').style.display = "none";
     }, 5000); // Wait 5 seconds
 }
+function showAdAndUnlock(memeElement) {
+  // Simulate showing an ad
+  alert("Please wait... Watching Ad");
+
+  // Simulate a 5-second ad
+  setTimeout(() => {
+    memeElement.classList.remove("blurred");
+    alert("Ad finished! Meme unlocked.");
+  }, 5000);
+}
