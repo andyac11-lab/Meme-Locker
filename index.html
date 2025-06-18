@@ -3,24 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meme Locker</title>
+  <title>Toxic Meme Vault</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🔥 Meme Locker 🔥</h1>
-  <div class="meme blurred" onclick="showAdAndUnlock(this)">
-  <img src="meme1.jpg" alt="Meme 1">
-  <div class="overlay">Watch Ad to Unlock</div>
-</div>
+  <h1>🔥 Welcome to Toxic Meme Vault 🔥</h1>
+  <p>Click a meme and watch an ad to unlock it.</p>
 
-<div class="meme blurred" onclick="showAdAndUnlock(this)">
-  <img src="meme2.jpg" alt="Meme 2">
-  <div class="overlay">Watch Ad to Unlock</div>
-</div>
-    <!-- Add more memes here -->
+  <div class="meme-gallery">
+    <img src="meme1.jpg" class="meme blurred" onclick="showAdAndUnlock(this)" />
+    <img src="meme2.jpg" class="meme blurred" onclick="showAdAndUnlock(this)" />
+    <img src="meme3.jpg" class="meme blurred" onclick="showAdAndUnlock(this)" />
+    <!-- Add more memes like above -->
   </div>
 
-  <!-- Adsterra ad code will go below -->
   <script src="script.js"></script>
 </body>
 </html>
